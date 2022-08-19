@@ -1,0 +1,47 @@
+<div class='product-page'>
+  <div class='imageArea'>
+    <img src={{product.image}} alt={{product.name}} />
+  </div>
+  <div class='infos'>
+    <div class='title'>
+      <h1>
+        {{product.name}}
+      </h1>
+    </div>
+    <div class='desc'>
+      <p>
+        <span>
+          Preço:
+        </span>
+        R$ {{product.price}}
+      </p>
+      <h3>
+        <span>
+          Descrição:
+        </span>
+      </h3>
+      <p>
+        {{product.description}}
+      </p>
+      <div class='actionsButtons'>
+        <form
+          action="/products/{{product._id}}"
+          class='form-action-product'
+          method='post'
+        >
+          <button type='submit' class='btn btn-remove'>
+            Deletar
+          </button>
+        </form>
+        <button class='btn btn-update'>
+          <a href="/products/edit/{{product._id}}" type='submit'>
+            Editar
+          </a>
+        </button>
+      </div>
+    </div>
+    <a class='btn' href='/'>
+      voltar
+    </a>
+  </div>
+</div>

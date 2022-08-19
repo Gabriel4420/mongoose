@@ -1,0 +1,239 @@
+* {
+  font-family: Helvetica;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e3e3e3;
+}
+
+.container {
+  padding: 2em;
+}
+
+.container h1 {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.container form:not(.form-action-product) {
+  margin: 0 auto 75px;
+  max-width: 300px;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2em 1.4em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #333;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+#navbar ul li {
+  margin-left: 1em;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  transition: 0.5s;
+  font-weight: bold;
+  color: #333;
+}
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.form-control label {
+  font-weight: bold;
+  margin-bottom: 0.3em;
+}
+
+.form-checkbox {
+  flex-direction: row;
+}
+
+.form-control input {
+  padding: 0.6em;
+  border-radius: 0.4em;
+  border: 1px solid #ccc;
+}
+
+.form-control textarea {
+  border-radius: 0.4em;
+  border: 1px solid #ccc;
+  padding: 0px;
+  outline: none;
+  resize: none;
+  overflow: auto;
+}
+
+form button {
+  background-color: #222;
+  color: #fff;
+  padding: 0.7em 1.5em;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.products {
+  display: flex;
+
+  flex-wrap: wrap;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+.product img {
+  width: 200px;
+  height: 200px;
+  max-width: 100%;
+  margin-bottom: 0.5em;
+  transition: all ease 1s;
+}
+
+.product img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.imageArea,
+.infoArea {
+  padding: 1em;
+  margin-right: 1em;
+}
+
+.product h3 {
+  font-size: 1.5em;
+}
+
+.product h3:hover {
+  text-decoration: underline;
+}
+
+.product p {
+  font-size: 1.1em;
+  padding: 0.5em;
+}
+
+.product a {
+  text-decoration: none;
+  color: black;
+}
+
+.product h5 {
+  font-size: 1rem;
+}
+
+.product-page {
+  display: flex;
+  align-items: center;
+  justify-content: space-arpund;
+  padding: 3rem;
+}
+
+.product-page img {
+  max-width: 100%;
+  width: 500px;
+  height: 500px;
+  transition: all ease 1s;
+}
+
+.product-page img:hover {
+  transform: scale(1.2);
+}
+
+.product-page .infos {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: center;
+  height: 100%;
+  padding: 1rem;
+  line-height: 110px;
+}
+
+.infos span {
+  font-weight: bold;
+}
+
+.infos .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+  line-height: 30px;
+  width: 30%;
+}
+
+.infos .btn:hover {
+  background-color: #333;
+  color: #ccc;
+  text-decoration: underline;
+}
+
+.actionsButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto 75px;
+}
+
+.form-action-product .btn-remove {
+  border: 1px solid red;
+  color: red;
+  background-color: transparent;
+  width: 100%;
+}
+
+.form-action-product .btn-remove:hover {
+  border: 1px solid red;
+  color: white;
+  background-color: red;
+}
+
+.actionsButtons .btn.btn-update {
+  border: 1px solid blue;
+  background-color: transparent;
+  width: 100%;
+  padding: 0.7em;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.actionsButtons .btn.btn-update:hover {
+  border: 1px solid blue;
+  color: white !important;
+  background-color: blue;
+}
+
+.actionsButtons .btn.btn-update:hover a {
+  color: white;
+}
+
+.form-action-product {
+  width: 250px;
+  max-width: 100%;
+}
