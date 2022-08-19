@@ -1,7 +1,3 @@
-<div align="center" id="top"> 
-  <img src="public/assets/HomeApp.png" alt="Mongodb" />
-
-</div>
 
 <h1 align="center">Mongoose [MongoDB] - Matheus Battisti</h1>
 
@@ -16,13 +12,11 @@
 
 </p>
 
-<!-- Status -->
+<div align="center" id="top"> 
+  <img src="public/assets/HomeApp.png" alt="Mongodb" />
 
-<!-- <h4 align="center">
-	🚧  Mongodb 🚀 Em construção...  🚧
-</h4>
+</div>
 
-<hr> -->
 
 <p align="center">
   <a href="#dart-sobre">Sobre</a> &#xa0; | &#xa0; 
